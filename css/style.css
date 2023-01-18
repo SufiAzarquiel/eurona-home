@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: scroll;
+    font-family: sans-serif;
+}
+
+/*
+colors:
+    #41b6e6
+    #333333
+    #ff008c
+    #fc4d0e
+    #6e247b
+    #b25f7b
+
+*/
+
+/* Paddings and margins */
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.px-2 {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.mr-2 {
+    margin-right: 2px;
+}
+
+/* Flex */
+.row {
+    display: flex;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Page design */
+header {
+    background-color: #41b6e6;
+    font-weight: bold;
+}
+
+nav {
+    width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #333333;
+}
+
+nav ul,
+nav li {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+nav ul li ul {
+    transition: all 0s ease 0.3s; /*delay 1s*/
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    width: 150px;
+}
+
+nav ul li:hover ul {
+    transition-delay: 0s;
+    visibility: visible;
+    background-color: #e5e5e5;
+} 
+nav ul ul a {
+    color: black;
+    font-size: small;
+}
+
+nav ul ul a:hover {
+    color: #41b6e6;
+}
+
+.txt-morado {
+    color: #6e247b;
+}
+
+.bg-blanco {
+    background-color: #ffffff;
+}
+
+.txt-blanco {
+    color: #ffffff;
+}
+
+.bg-morado {
+    background-color: #6e247b;
+}
