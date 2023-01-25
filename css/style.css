@@ -1,121 +1,91 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
-    overflow: scroll;
     font-family: sans-serif;
+    font-weight: 600;
 }
-
-/*
-colors:
-    #41b6e6
-    #333333
-    #ff008c
-    #fc4d0e
-    #6e247b
-    #b25f7b
-
-*/
-
-/* Paddings and margins */
-.py-12 {
-    padding-top: 12px;
-    padding-bottom: 12px;
+.container {
+    width: 94%;
+    margin: 0 auto;
 }
-
-.px-2 {
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-.mr-2 {
-    margin-right: 2px;
-}
-
-/* Flex */
 .row {
     display: flex;
 }
-
-.justify-around {
-    justify-content: space-around;
+.justify-content-between {
+    justify-content: space-between;
 }
-
-.justify-center {
-    justify-content: center;
-}
-
-.align-center {
+.align-items-center {
     align-items: center;
 }
-
-/* Page design */
 header {
-    background-color: #41b6e6;
-    font-weight: bold;
+    background-color: #63b4e1;
 }
-
-nav {
-    width: 50%;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-nav a:hover {
-    color: #333333;
-}
-
-nav ul,
-nav li {
-    margin: 0px;
-    padding: 0px;
-}
-
-nav ul li {
-    float: left;
-    list-style-type: none;
-    position: relative;
-}
-
-nav ul li ul {
-    transition: all 0s ease 0.3s; /*delay 1s*/
-    visibility: hidden;
-    position: absolute;
-    top: 30px;
-    width: 150px;
-}
-
-nav ul li:hover ul {
-    transition-delay: 0s;
-    visibility: visible;
-    background-color: #e5e5e5;
-} 
-nav ul ul a {
-    color: black;
-    font-size: small;
-}
-
-nav ul ul a:hover {
-    color: #41b6e6;
-}
-
-.txt-morado {
-    color: #6e247b;
-}
-
-.bg-blanco {
-    background-color: #ffffff;
-}
-
-.txt-blanco {
-    color: #ffffff;
-}
-
 .bg-morado {
-    background-color: #6e247b;
+    background-color: #652b77;
+}
+.bg-white {
+    background-color: white;
+}
+.text-white {
+    color: white;
+}
+.text-morado {
+    color: #652b77;
+}
+nav ul, nav li {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    float: left;
+    position: relative;
+    list-style-type: none;
+    padding: 16px;
+    color: white;
+}
+nav li ul {
+    display: none;
+    position: absolute;
+    background-color: #e5e5e5;
+    width: 200px;
+}
+nav ul li ul li {
+    width: 170px;
+    margin-left: 30px;
+    font-size: 13px;
+    color: black;
+}
+nav li:hover ul {
+    display: block;
+    margin-top: 16px;
+}
+nav ul li:hover {
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+nav ul li:hover a {
+    color: rgb(56, 56, 56);
+}
+nav ul li ul li:hover {
+    color: #63b4e1;
+}
+nav ul li a {
+    color: white;
+}
+
+.px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.mr-4 {
+    margin-right: 4px;
+}
+a {
+    text-decoration: none;
+}
+
+.telemedicina-container {
+    height: 30px;
 }
