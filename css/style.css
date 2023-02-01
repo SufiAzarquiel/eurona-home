@@ -1,43 +1,57 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: sans-serif;
     font-weight: 600;
+    overflow-x: hidden;
 }
+
 .container {
     width: 94%;
     margin: 0 auto;
 }
+
 .row {
     display: flex;
 }
+
 .justify-content-between {
     justify-content: space-between;
 }
+
 .align-items-center {
     align-items: center;
 }
+
 header {
     background-color: #63b4e1;
 }
+
 .bg-morado {
     background-color: #652b77;
 }
+
 .bg-white {
     background-color: white;
 }
+
 .text-white {
     color: white;
 }
+
 .text-morado {
     color: #652b77;
 }
-nav ul, nav li {
+
+nav ul,
+nav li {
     padding: 0;
     margin: 0;
 }
+
 nav li {
     float: left;
     position: relative;
@@ -45,32 +59,40 @@ nav li {
     padding: 16px;
     color: white;
 }
+
 nav li ul {
     display: none;
     position: absolute;
     background-color: #e5e5e5;
     width: 200px;
 }
+
 nav ul li ul li {
     width: 170px;
     margin-left: 30px;
     font-size: 13px;
     color: black;
 }
+
 nav li:hover ul {
     display: block;
     margin-top: 16px;
+    z-index: 1;
 }
+
 nav ul li:hover {
     color: rgb(56, 56, 56);
     cursor: pointer;
 }
+
 nav ul li:hover a {
     color: rgb(56, 56, 56);
 }
+
 nav ul li ul li:hover {
     color: #63b4e1;
 }
+
 nav ul li a {
     color: white;
 }
@@ -79,13 +101,266 @@ nav ul li a {
     padding-left: 12px;
     padding-right: 12px;
 }
+
 .mr-4 {
     margin-right: 4px;
 }
+
 a {
     text-decoration: none;
 }
 
-.telemedicina-container {
-    height: 30px;
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.left {
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right {
+    right: 3%;
+    top: 15%;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.w-100pp {
+    width: 100%;
+}
+
+.w-50pp {
+    width: 50%;
+}
+
+.foto-l {
+    width: 40%;
+}
+
+.foto-r {
+    width: 20%;
+}
+
+.foto-l h2 {
+    background-color: #63b4e1;
+    color: white;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.foto-l p {
+    color: white;
+}
+
+.boton-rosa {
+    background-color: #ff008c;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.main-img {
+    margin-left: -25%;
+}
+
+.blue-box {
+    background-color: #63b4e1;
+}
+
+.white-box {
+    background-color: white;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.border-rad-15 {
+    border-radius: 10px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.foto-r form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.p-2 {
+    padding: 2px;
+}
+
+.col-4 {
+    width: 22%;
+}
+
+.font-w-normal {
+    font-weight: normal;
+}
+
+.col-4 p {
+    color: #2e2e2e;
+}
+
+.align-strecht {
+    align-items: stretch;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.line-h-n {
+    line-height: 1.5;
+}
+
+img[alt="pueblo"] {
+    width: 100%;
+    height: 100%;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.txt-rosa {
+    color: #ff008c;
+}
+
+.txt-naranja {
+    color: #ff6600;
+}
+
+.txt-azul {
+    color: #63b4e1;
+}
+
+.txt-morado .txt-italic {
+    font-style: italic;
+}
+
+.boton-verde {
+    background-color: #bada55;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.precio {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.card {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.px-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+.txt-italic {
+    font-style: italic;
+}
+
+.my-25 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #63b4e1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mx-10 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-lista a {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.footer-lista li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.font-w-bold {
+    font-weight: bold;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.w-15pp {
+    width: 10%;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.icono-yt {
+    scale: 1.5;
 }
