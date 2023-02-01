@@ -172,6 +172,20 @@ a {
     color: white;
 }
 
+.foto-r .blue-box {
+    color: white;
+}
+
+.foto-r .white-box form p {
+    color: gray;
+    font-size: small;
+    opacity: 0.8;
+}
+
+.foto-r .white-box form {
+    font-size: smaller;
+}
+
 .boton-rosa {
     background-color: #ff008c;
     color: white;
